@@ -36,3 +36,41 @@ Tracks user holdings and transaction history
 Calculates portfolio value and performance metrics
 
 Clean separation of concerns for maintainability and scalability
+
+
+
+## 🏗️ Architecture
+
+The project follows a layered architecture:
+
+| Layer        | Purpose                                                                 |
+|--------------|-------------------------------------------------------------------------|
+| **Models**   | Define core data structures: `Stock`, `Portfolio`, `Transaction`        |
+| **Services** | Handle business logic: price simulation, trading, analytics             |
+| **Data Layer** | Provide mock data and future file/database integration                |
+
+---
+
+## 🔧 Technologies Used
+
+- C# (.NET Core )
+- Console Application (no UI layer)
+- `List<T>`, `Dictionary<TKey, TValue>`
+- `Random`, `DateTime`, `Math`
+- Clean code principles and modular design
+
+---
+
+## 📚 Features
+
+- Simulates dynamic stock price changes using random walk logic
+- Allows buying and selling of stocks with cash balance tracking
+- Tracks user holdings and transaction history
+- Calculates portfolio value and performance metrics
+- Fully modular and extensible for future upgrades
+
+---
+
+## 📁 Folder Structure
+
+StockSimulator/ ├── Models/ │ ├── Stock.cs │ ├── Portfolio.cs │ └── Transaction.cs ├── Services/ │ ├── MarketService.cs │ └── TradingService.cs ├── Data/ │ └── DataStore.cs └── Program.cs
